@@ -1,0 +1,9 @@
+# compiled classes (IntelliJ builds them again)
+out/
+*.class
+
+# data file of the program (created automatically at the first start)
+data/
+
+# personal settings of IntelliJ IDEA
+.idea/workspace.xml
