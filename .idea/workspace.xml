@@ -4,10 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e9727b8-8092-4e32-af2d-09db9d084c57" name="Changes" comment="Coffee shop project">
+    <list default="true" id="7e9727b8-8092-4e32-af2d-09db9d084c57" name="Changes" comment="Unit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoffeeShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeShop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shop.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/shop.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/exception/BusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/exception/BusinessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/exception/StorageException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/exception/StorageException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/exception/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/exception/ValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Coffee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Coffee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Discountable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Discountable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Equipment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Equipment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Identifiable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Identifiable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/OrderItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/OrderStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/ProductType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/ProductType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/RoastLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/RoastLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Tea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/Tea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/TeaType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/model/TeaType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/service/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/service/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/DataStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/DataStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/FileDataStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/FileDataStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/Repository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/ShopData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/storage/ShopData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CatalogPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CatalogPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CatalogPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CatalogPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CategoriesPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CategoriesPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CategoryDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CategoryDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CustomerDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CustomerDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CustomersPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/CustomersPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/FormPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/FormPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/HomePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/HomePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/NewOrderPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/NewOrderPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/OrdersPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/OrdersPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/ProductDialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/ProductDialog$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/ProductDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/ProductDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/ReadOnlyTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/ReadOnlyTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/Refreshable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/Refreshable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/UiUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/ui/UiUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/util/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoffeeShop/coffeeshop/util/Validator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +125,15 @@
       <option name="presentableId" value="Default" />
       <updated>1792609893737</updated>
     </task>
+    <task id="LOCAL-00001" summary="Unit tests">
+      <option name="closed" value="true" />
+      <created>1794247729474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1794247729474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Coffee shop project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coffee shop project" />
+    <MESSAGE value="Unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit tests" />
   </component>
 </project>
