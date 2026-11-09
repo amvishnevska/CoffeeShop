@@ -5,50 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e9727b8-8092-4e32-af2d-09db9d084c57" name="Changes" comment="Coffee shop project">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoffeeShop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/shop.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/exception/StorageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/exception/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Coffee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Discountable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Identifiable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/ProductType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/RoastLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/Tea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/model/TeaType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/service/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/storage/DataStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/storage/FileDataStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/storage/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/storage/ShopData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/CatalogPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/CategoriesPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/CategoryDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/CustomerDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/CustomersPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/FormPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/HomePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/NewOrderPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/OrdersPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/ProductDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/ReadOnlyTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/Refreshable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/ui/UiUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coffeeshop/util/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shop.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/shop.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +17,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "amvishnevska"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;amvishnevska&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/amvishnevska/coffee_shop.git",
-    "accountId": "36653ed6-a2c2-46c6-941c-9e6ca50f9cfe"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/amvishnevska/coffee_shop.git&quot;,
+    &quot;accountId&quot;: &quot;36653ed6-a2c2-46c6-941c-9e6ca50f9cfe&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -82,6 +41,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in CoffeeShop.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -97,6 +61,21 @@
       <recent name="C:\Users\Alinchik\IdeaProjects\CoffeeShop" />
       <recent name="C:\Users\Alinchik\IdeaProjects\CoffeeShop\.idea" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="All in CoffeeShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeShop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in CoffeeShop" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
