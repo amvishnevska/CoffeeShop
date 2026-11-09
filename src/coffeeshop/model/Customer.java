@@ -2,6 +2,7 @@ package coffeeshop.model;
 
 import java.io.Serializable;
 
+/** Customer of the shop. */
 public class Customer implements Identifiable, Serializable {
 
     private static final long serialVersionUID = 1L;

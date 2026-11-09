@@ -1,5 +1,6 @@
 package coffeeshop.model;
 
+/** Loose-leaf or bagged tea. */
 public class Tea extends Product {
 
     private static final long serialVersionUID = 1L;

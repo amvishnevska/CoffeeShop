@@ -28,6 +28,7 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Product catalog: categories on the left, products on the right, search on the top. */
 public class CatalogPanel extends JPanel implements Refreshable {
 
     private static final String ALL_CATEGORIES = "All categories";
@@ -141,6 +142,7 @@ public class CatalogPanel extends JPanel implements Refreshable {
         for (Category c : frame.getShop().getCategories()) {
             categoryModel.addElement(c);
         }
+        // keep the previously selected category if it still exists
         if (selected != null && categoryModel.contains(selected)) {
             categoryList.setSelectedValue(selected, true);
         } else {

@@ -5,6 +5,7 @@ import coffeeshop.exception.ValidationException;
 import java.math.BigDecimal;
 import java.util.regex.Pattern;
 
+/** Helper methods for checking user input. */
 public final class Validator {
 
     private static final Pattern EMAIL = Pattern.compile("^[\\w.+-]+@[\\w-]+(\\.[\\w-]+)*\\.[A-Za-z]{2,}$");
@@ -13,6 +14,7 @@ public final class Validator {
     public static final int MAX_TEXT_LENGTH = 100;
 
     private Validator() {
+    // utility class, no instances
     }
 
     /** Checks that the text is not empty and not too long; returns the trimmed text. */

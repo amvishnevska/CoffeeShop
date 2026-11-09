@@ -1,5 +1,6 @@
 package coffeeshop.model;
 
+/** Coffee equipment: grinders, coffee machines, kettles, cups etc. */
 public class Equipment extends Product implements Discountable {
 
     private static final long serialVersionUID = 1L;

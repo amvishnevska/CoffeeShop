@@ -77,6 +77,7 @@ public class MainFrame extends JFrame {
         pages.put(name, (Refreshable) page);
     }
 
+    /** Builds the main menu. */
     private JMenuBar createMenuBar() {
         JMenuBar bar = new JMenuBar();
 
@@ -107,6 +108,7 @@ public class MainFrame extends JFrame {
         return bar;
     }
 
+    /** Creates a menu item with a Ctrl+key shortcut. */
     private JMenuItem menuItem(String text, int key, Runnable action) {
         JMenuItem item = new JMenuItem(text);
         item.setAccelerator(key == KeyEvent.VK_F1
@@ -116,11 +118,13 @@ public class MainFrame extends JFrame {
         return item;
     }
 
+    /** Shows the page with the given name and reloads its data. */
     public void showPage(String name) {
         pages.get(name).refresh();
         cardLayout.show(content, name);
     }
 
+    /** Saves data to the file. */
     public boolean saveData() {
         try {
             shop.save();

@@ -27,6 +27,7 @@ import java.util.Map;
  */
 public class Shop {
 
+    /** Products with stock below this value are considered "low stock". */
     public static final int LOW_STOCK_LIMIT = 5;
 
     private final DataStorage storage;
@@ -37,6 +38,7 @@ public class Shop {
         this.data = new ShopData();
     }
 
+    /** Loads the data, or creates demo data on the first start. */
     public boolean loadOrCreate() throws StorageException {
         if (storage.exists()) {
             data = storage.load();
@@ -48,15 +50,18 @@ public class Shop {
         return false;
     }
 
+    /** Saves all data to the storage. */
     public void save() throws StorageException {
         storage.save(data);
     }
 
+    /** Replaces the data with demo data (used when the data file is damaged). */
     public void resetToDemoData() {
         data = new ShopData();
         createDemoData();
     }
 
+    // ===================== categories =====================
     public List<Category> getCategories() {
         return data.getCategories().getAll();
     }
@@ -72,6 +77,7 @@ public class Shop {
         category.setDescription(description);
     }
 
+    /** Deletes a category; a category with products cannot be deleted. */
     public void deleteCategory(Category category) throws BusinessException {
         int count = searchProducts(category).size();
         if (count > 0) {
@@ -89,6 +95,7 @@ public class Shop {
         }
     }
 
+    // ===================== products =====================
     public List<Product> getProducts() {
         return data.getProducts().getAll();
     }
@@ -101,18 +108,22 @@ public class Shop {
         data.getProducts().remove(product.getId());
     }
 
+    /** Search by part of the name or brand (case insensitive). */
     public List<Product> searchProducts(String text) {
         return searchProducts(text, null, 0, Double.MAX_VALUE);
     }
 
+    /** Search all products of the category. */
     public List<Product> searchProducts(Category category) {
         return searchProducts("", category, 0, Double.MAX_VALUE);
     }
 
+    /** Search by selling price range. */
     public List<Product> searchProducts(double minPrice, double maxPrice) {
         return searchProducts("", null, minPrice, maxPrice);
     }
 
+    /** Combined search; every criterion is optional. */
     public List<Product> searchProducts(String text, Category category, double minPrice, double maxPrice) {
         String query = text == null ? "" : text.trim().toLowerCase();
         List<Product> result = new ArrayList<>();
@@ -129,6 +140,7 @@ public class Shop {
         return result;
     }
 
+    // ===================== customers =====================
      public List<Customer> getCustomers() {
         return data.getCustomers().getAll();
     }
@@ -138,6 +150,7 @@ public class Shop {
         return data.getCustomers().add(customer);
     }
 
+    /** Checks that no other customer uses the same e-mail. */
     public void checkEmailUnique(String email, Customer current) throws BusinessException {
         for (Customer c : getCustomers()) {
             if (c != current && c.getEmail().equalsIgnoreCase(email.trim())) {
@@ -146,6 +159,7 @@ public class Shop {
         }
     }
 
+    /** Deletes a customer; a customer with orders cannot be deleted. */
     public void deleteCustomer(Customer customer) throws BusinessException {
         if (!getOrdersOf(customer).isEmpty()) {
             throw new BusinessException("Customer \"" + customer.getFullName()
@@ -154,6 +168,7 @@ public class Shop {
         data.getCustomers().remove(customer.getId());
     }
 
+    // ===================== orders =====================
     public List<Order> getOrders() {
         return data.getOrders().getAll();
     }
@@ -168,6 +183,7 @@ public class Shop {
         return result;
     }
 
+    /** Creates an order: checks that every product is in stock and decreases the stock. */
     public Order placeOrder(Customer customer, List<OrderItem> items, String comment) throws BusinessException {
         if (customer == null) {
             throw new BusinessException("Please select a customer.");
@@ -175,6 +191,7 @@ public class Shop {
         if (items == null || items.isEmpty()) {
             throw new BusinessException("The cart is empty. Add at least one product.");
         }
+        // the same product may be in the cart several times, so sum quantities first
         Map<Product, Integer> needed = new HashMap<>();
         for (OrderItem item : items) {
             needed.merge(item.getProduct(), item.getQuantity(), Integer::sum);
@@ -195,6 +212,7 @@ public class Shop {
         return data.getOrders().add(new Order(customer, items, comment));
     }
 
+    /** Changes the order status; cancelling returns the items to stock. */
     public void changeOrderStatus(Order order, OrderStatus newStatus) throws BusinessException {
         if (order.getStatus().isFinal()) {
             throw new BusinessException("Order #" + order.getId() + " is already "
@@ -231,6 +249,7 @@ public class Shop {
         return result;
     }
 
+    /** Fills the shop with sample data so the application is not empty on first start. */
     private void createDemoData() {
         Category beans = data.getCategories().add(new Category("Coffee beans", "Whole bean coffee from different countries"));
         Category ground = data.getCategories().add(new Category("Ground coffee", "Ready to brew ground coffee"));

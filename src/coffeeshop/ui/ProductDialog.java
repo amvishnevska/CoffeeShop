@@ -39,6 +39,7 @@ public class ProductDialog extends JDialog {
     private Product product;
     private boolean saved = false;
 
+    // common fields
     private final JComboBox<ProductType> typeBox = new JComboBox<>(ProductType.values());
     private final JTextField nameField = new JTextField(25);
     private final JTextField brandField = new JTextField(25);
@@ -48,16 +49,19 @@ public class ProductDialog extends JDialog {
     private final JTextField ratingField = new JTextField("0", 10);
     private final JTextArea descriptionArea = new JTextArea(3, 25);
 
+    // coffee fields
     private final JComboBox<RoastLevel> roastBox = new JComboBox<>(RoastLevel.values());
     private final JTextField originField = new JTextField(15);
     private final JTextField coffeeWeightField = new JTextField("250", 10);
     private final JCheckBox groundCheck = new JCheckBox("Ground coffee");
     private final JTextField coffeeDiscountField = new JTextField("0", 10);
 
+    // tea fields
     private final JComboBox<TeaType> teaTypeBox = new JComboBox<>(TeaType.values());
     private final JTextField teaWeightField = new JTextField("100", 10);
     private final JCheckBox baggedCheck = new JCheckBox("Tea bags");
 
+    // equipment fields
     private final JTextField warrantyField = new JTextField("12", 10);
     private final JTextField materialField = new JTextField(15);
     private final JTextField powerField = new JTextField("0", 10);
@@ -155,6 +159,7 @@ public class ProductDialog extends JDialog {
         return (ProductType) typeBox.getSelectedItem();
     }
 
+    /** Puts the values of an existing product into the fields. */
     private void fillFields(Product p) {
         typeBox.setSelectedItem(p.getType());
         nameField.setText(p.getName());
@@ -186,6 +191,7 @@ public class ProductDialog extends JDialog {
         }
     }
 
+    /** Validates all fields and creates or updates the product. */
     private void onSave() {
         try {
             String name = Validator.requireText(nameField.getText(), "Name");
@@ -207,6 +213,7 @@ public class ProductDialog extends JDialog {
                 product.setRating(rating);
                 shop.addProduct(product);
             } else {
+                // validate the specific fields before changing anything
                 updateSpecificFields(product);
                 product.setName(name);
                 product.setBrand(brand);
@@ -223,6 +230,7 @@ public class ProductDialog extends JDialog {
         }
     }
 
+    /** Creates an object of the subclass that corresponds to the selected type. */
     private Product createProduct(String name, String description, double price, int stock,
                                   Category category, String brand) throws ValidationException {
         switch (getSelectedType()) {
@@ -250,6 +258,7 @@ public class ProductDialog extends JDialog {
         }
     }
 
+    /** Copies specific fields into an existing product. */
     private void updateSpecificFields(Product p) throws ValidationException {
         if (p instanceof Coffee) {
             Coffee c = (Coffee) p;

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/** Customer order. */
 public class Order implements Identifiable, Serializable {
 
     private static final long serialVersionUID = 1L;

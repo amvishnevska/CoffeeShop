@@ -17,6 +17,7 @@ public class ReadOnlyTableModel extends DefaultTableModel {
         return false;
     }
 
+    /** Removes all rows. */
     public void clear() {
         setRowCount(0);
     }

@@ -26,6 +26,7 @@ public class FileDataStorage implements DataStorage {
         if (folder != null && !folder.exists() && !folder.mkdirs()) {
             throw new StorageException("Cannot create folder " + folder, null);
         }
+        // try-with-resources closes the stream automatically even if an error occurs
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {
             out.writeObject(data);
         } catch (IOException e) {

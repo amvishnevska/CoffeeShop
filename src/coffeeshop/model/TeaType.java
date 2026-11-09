@@ -1,5 +1,6 @@
 package coffeeshop.model;
 
+/** Type of tea. */
 public enum TeaType {
     BLACK("Black"),
     GREEN("Green"),

@@ -37,6 +37,7 @@ public class NewOrderPanel extends JPanel implements Refreshable {
     private final JTable cartTable = UiUtils.table(cartModel);
     private final JLabel totalLabel = new JLabel();
 
+    /** Items added to the cart but not yet ordered. */
     private final List<OrderItem> cart = new ArrayList<>();
 
     public NewOrderPanel(MainFrame frame) {
@@ -101,6 +102,7 @@ public class NewOrderPanel extends JPanel implements Refreshable {
                 productBox.addItem(p);
             }
         }
+        // remove products that were deleted from the catalog while they were in the cart
         cart.removeIf(item -> !frame.getShop().getProducts().contains(item.getProduct()));
         updateCart();
         showProductInfo();
@@ -115,6 +117,7 @@ public class NewOrderPanel extends JPanel implements Refreshable {
 
     private int quantityInCart(Product product) {
         int qty = 0;
+        // if the product is already in the cart, only increase the quantity
         for (OrderItem item : cart) {
             if (item.getProduct() == product) {
                 qty += item.getQuantity();

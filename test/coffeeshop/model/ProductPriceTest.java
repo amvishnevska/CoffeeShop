@@ -8,6 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+/** Tests of the selling price with a discount (requirement FR6). */
 class ProductPriceTest {
 
     private final Category machines = new Category("Coffee machines", "");

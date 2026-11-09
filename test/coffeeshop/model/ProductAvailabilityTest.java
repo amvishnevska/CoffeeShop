@@ -5,6 +5,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/** Tests of the stock check Product.isAvailable(quantity) (requirements FR8, FR9). */
 class ProductAvailabilityTest {
 
     @ParameterizedTest(name = "stock {0}, quantity {1} -> {2}")

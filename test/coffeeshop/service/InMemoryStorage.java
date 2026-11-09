@@ -3,6 +3,7 @@ package coffeeshop.service;
 import coffeeshop.storage.DataStorage;
 import coffeeshop.storage.ShopData;
 
+/** Test storage in memory, so the tests do not change the real data file. */
 class InMemoryStorage implements DataStorage {
 
     private ShopData saved;

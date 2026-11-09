@@ -7,6 +7,7 @@ import coffeeshop.model.Product;
 
 import java.io.Serializable;
 
+/** Container for all data of the shop. */
 public class ShopData implements Serializable {
 
     private static final long serialVersionUID = 1L;

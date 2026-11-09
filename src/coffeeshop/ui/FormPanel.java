@@ -21,6 +21,7 @@ public class FormPanel extends JPanel {
         setBorder(new EmptyBorder(10, 10, 10, 10));
     }
 
+    /** Adds a row with a label and an input field. */
     public void addRow(String label, JComponent field, String hint) {
         JLabel jLabel = new JLabel(label);
         jLabel.setLabelFor(field);
@@ -44,10 +45,12 @@ public class FormPanel extends JPanel {
         row++;
     }
 
+    /** Adds a row with a label and an input field without a hint. */
     public void addRow(String label, JComponent field) {
         addRow(label, field, null);
     }
 
+    /** Adds a component that takes the whole row (e.g. a section title). */
     public void addFullRow(JComponent component) {
         GridBagConstraints c = new GridBagConstraints();
         c.gridx = 0;

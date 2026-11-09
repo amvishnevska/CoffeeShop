@@ -9,12 +9,15 @@ import coffeeshop.ui.UiUtils;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
+/** Entry point of the Coffee Shop application. */
 public class Main {
 
+    /** File where all data of the shop is stored (relative to the project folder). */
    private static final String DATA_FILE = "data/shop.dat";
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(Main::start);
+        // not critical: the default look and feel will be used
     }
 
     private static void start() {

@@ -17,6 +17,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+/** Tests of placing an order (FR9) and changing its status (FR11). */
 class ShopOrderTest {
 
     private Shop shop;

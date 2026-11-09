@@ -6,5 +6,6 @@ package coffeeshop.ui;
  */
 public interface Refreshable {
 
+    /** Reloads the data displayed on the page. */
     void refresh();
 }

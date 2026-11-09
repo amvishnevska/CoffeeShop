@@ -1,5 +1,6 @@
 package coffeeshop.model;
 
+/** Lifecycle status of an order. */
 public enum OrderStatus {
     NEW("New"),
     PAID("Paid"),

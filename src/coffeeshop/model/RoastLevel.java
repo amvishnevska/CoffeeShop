@@ -1,5 +1,6 @@
 package coffeeshop.model;
 
+/** Roast level of coffee beans. */
 public enum RoastLevel {
     LIGHT("Light"),
     MEDIUM("Medium"),

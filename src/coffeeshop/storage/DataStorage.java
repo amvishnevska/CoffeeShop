@@ -8,8 +8,10 @@ import coffeeshop.exception.StorageException;
  */
 public interface DataStorage {
 
+    /** Saves all data. */
     void save(ShopData data) throws StorageException;
 
+    /** Loads all data. */
     ShopData load() throws StorageException;
 
     boolean exists();

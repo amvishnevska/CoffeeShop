@@ -1,5 +1,6 @@
 package coffeeshop.model;
 
+/** Coffee (beans or ground). */
 public class Coffee extends Product implements Discountable {
 
     private static final long serialVersionUID = 1L;

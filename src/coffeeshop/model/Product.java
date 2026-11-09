@@ -3,6 +3,7 @@ package coffeeshop.model;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+/** Abstract base class for all goods sold in the shop. */
 public abstract class Product implements Identifiable, Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -31,6 +32,7 @@ public abstract class Product implements Identifiable, Serializable {
 
     public abstract ProductType getType();
 
+    /** Returns the text with attributes specific to the subclass. */
     public abstract String getSpecificDetails();
 
     public String getFullDetails() {
@@ -47,6 +49,7 @@ public abstract class Product implements Identifiable, Serializable {
                 + getSpecificDetails();
     }
 
+    /** Price the customer actually pays. */
     public double getSellingPrice() {
         return price;
     }
@@ -59,6 +62,7 @@ public abstract class Product implements Identifiable, Serializable {
         return isAvailable(1);
     }
 
+    /** Decreases stock after an order. */
     public void decreaseStock(int quantity) {
         if (!isAvailable(quantity)) {
             throw new IllegalArgumentException("Not enough items in stock: " + name);
@@ -66,6 +70,7 @@ public abstract class Product implements Identifiable, Serializable {
         stockQuantity -= quantity;
     }
 
+    /** Returns items to stock (e.g. when an order is cancelled). */
     public void increaseStock(int quantity) {
         if (quantity <= 0) {
             throw new IllegalArgumentException("Quantity must be positive");
@@ -73,6 +78,7 @@ public abstract class Product implements Identifiable, Serializable {
         stockQuantity += quantity;
     }
 
+    // ---------- getters and setters ----------
     @Override
     public int getId() {
         return id;

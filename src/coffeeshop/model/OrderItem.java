@@ -2,6 +2,7 @@ package coffeeshop.model;
 
 import java.io.Serializable;
 
+/** One line of an order: a product, its quantity and the price at the moment of purchase. */
 public class OrderItem implements Serializable {
 
     private static final long serialVersionUID = 1L;

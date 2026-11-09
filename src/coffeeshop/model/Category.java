@@ -2,6 +2,7 @@ package coffeeshop.model;
 
 import java.io.Serializable;
 
+/** Product category; one category contains many products. */
 public class Category implements Identifiable, Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -15,6 +16,7 @@ public class Category implements Identifiable, Serializable {
         setDescription(description);
     }
 
+    /** Name is shown in combo boxes and lists. */
     @Override
     public int getId() {
         return id;
