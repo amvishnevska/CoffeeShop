@@ -27,6 +27,7 @@ import javax.swing.JTextField;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.FlowLayout;
+import java.util.Locale;
 
 /**
  * Dialog for adding a new product or editing an existing one.
@@ -159,7 +160,7 @@ public class ProductDialog extends JDialog {
         nameField.setText(p.getName());
         brandField.setText(p.getBrand());
         categoryBox.setSelectedItem(p.getCategory());
-        priceField.setText(String.valueOf(p.getPrice()));
+        priceField.setText(String.format(Locale.US, "%.2f", p.getPrice()));
         stockField.setText(String.valueOf(p.getStockQuantity()));
         ratingField.setText(String.valueOf(p.getRating()));
         descriptionArea.setText(p.getDescription());

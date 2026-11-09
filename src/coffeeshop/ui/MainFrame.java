@@ -14,6 +14,7 @@ import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.awt.Dimension;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -65,6 +66,8 @@ public class MainFrame extends JFrame {
         add(statusBar, BorderLayout.SOUTH);
 
         setSize(1100, 650);
+        // a smaller window hides buttons and filter fields
+        setMinimumSize(new Dimension(1000, 600));
         setLocationRelativeTo(null);
         showPage(HOME);
     }

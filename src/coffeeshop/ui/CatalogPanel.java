@@ -74,6 +74,11 @@ public class CatalogPanel extends JPanel implements Refreshable {
                 }
             }
         });
+        // column widths, so that names are not cut
+        int[] widths = {35, 210, 75, 120, 95, 80, 60, 90, 60, 50};
+        for (int i = 0; i < widths.length; i++) {
+            table.getColumnModel().getColumn(i).setPreferredWidth(widths[i]);
+        }
         JScrollPane tableScroll = new JScrollPane(table);
         tableScroll.setBorder(BorderFactory.createTitledBorder("Products (double click to see details)"));
 
